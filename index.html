@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Mini-Portfolio - [Votre Nom]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mon Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#hobbies">Intérêts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="themeToggle">Changer de thème</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="card">
+            <h2>À Propos de Moi</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/150" alt="Votre Photo de Profil" class="profile-pic">
+                <div>
+                    <p>Bonjour ! Je m'appelle **[Votre Nom]** et je suis un passionné de développement web, fraîchement diplômé du BAC et désireux de devenir un programmeur accompli. J'apprends actuellement les bases de HTML, CSS et JavaScript.</p>
+                    <p id="moreInfo" style="display: none;">Mon objectif est de créer des applications web innovantes et intuitives. Je suis très motivé et j'adore résoudre des problèmes complexes.</p>
+                    <button id="toggleAboutInfo">En savoir plus</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Mes Compétences</h2>
+            <ul id="competencesList">
+                </ul>
+        </section>
+
+        <section id="hobbies" class="card">
+            <h2>Mes Hobbies et Intérêts</h2>
+            <ul>
+                <li>Lecture de science-fiction</li>
+                <li>Randonnée en nature</li>
+                <li>Apprentissage de nouvelles technologies</li>
+                <li>Cuisine</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contactez-moi</h2>
+            <p>N'hésitez pas à me contacter via :</p>
+            <ul>
+                <li>Email : <a href="mailto:votre.email@example.com">votre.email@example.com</a></li>
+                <li>LinkedIn : <a href="https://linkedin.com/in/votreprofil" target="_blank">Mon profil LinkedIn</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Votre Nom]. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

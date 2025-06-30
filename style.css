@@ -1,0 +1,249 @@
+/* Styles Généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s; /* Animation douce pour le thème */
+}
+
+/* Thème Sombre */
+body.dark-theme {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+body.dark-theme header {
+    background-color: #34495e;
+}
+
+body.dark-theme header h1,
+body.dark-theme nav a {
+    color: #ecf0f1;
+}
+
+body.dark-theme .card {
+    background-color: #34495e;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+body.dark-theme a {
+    color: #85c1e9; /* Couleur des liens dans le thème sombre */
+}
+
+body.dark-theme button {
+    background-color: #555;
+    color: #ecf0f1;
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #28a745; /* Vert vibrant */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex; /* Flexbox pour aligner les éléments dans le header */
+    justify-content: space-between; /* Espacer le titre, nav et bouton */
+    align-items: center; /* Aligner verticalement */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d4edda;
+    text-decoration: underline;
+}
+
+/* Bouton changer de thème */
+#themeToggle {
+    background-color: #fff;
+    color: #28a745;
+    border: 2px solid #28a745;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#themeToggle:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Main Content */
+main {
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.card h2 {
+    color: #28a745;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* À Propos de Moi */
+.about-content {
+    display: flex; /* Utilise Flexbox pour aligner l'image et le texte */
+    align-items: flex-start;
+    gap: 20px; /* Espace entre l'image et le texte */
+}
+
+.profile-pic {
+    border-radius: 50%; /* Rend l'image ronde */
+    border: 3px solid #28a745;
+    object-fit: cover; /* Assure que l'image couvre bien l'espace */
+}
+
+/* Liens génériques et listes */
+a {
+    color: #28a745;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: disc; /* Puces par défaut */
+    margin-left: 20px;
+}
+
+ul#competencesList li {
+    background-color: #e6ffe6;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-left: 3px solid #28a745;
+    border-radius: 3px;
+    list-style: none; /* Supprime les puces pour ces listes */
+}
+
+/* Boutons */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* --- Responsive Design --- */
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Empile les éléments du header */
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Empile la navigation */
+        margin-top: 15px;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    #themeToggle {
+        margin-top: 15px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .card {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column; /* Empile l'image et le texte dans la section "À Propos" */
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 720px;
+    }
+}
