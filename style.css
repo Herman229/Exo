@@ -247,3 +247,29 @@ footer {
         max-width: 720px;
     }
 }
+/* Style pour la section de blague */
+#jokeSection {
+    text-align: center;
+    padding: 30px;
+    margin-top: 30px;
+    background-color: #f8f9fa; /* Une couleur de fond légèrement différente */
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+#jokeText {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+body.dark-theme #jokeSection {
+    background-color: #495057;
+    border-color: #6c757d;
+    color: #ecf0f1;
+}
+
+body.dark-theme #jokeText {
+    color: #ced4da;
+}
